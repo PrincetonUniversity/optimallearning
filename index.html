@@ -6,7 +6,6 @@
   <title>Optimal Learning</title>
   <meta name="description" content="Optimal learning and the knowledge gradient: research, tutorials, software, and applications.">
   <meta name="keywords" content="optimal learning, knowledge gradient, statistical learning, optimal statistical learning">
-  <link rel="preload" href="Resources/brwn074.jpg" as="image">
   <link rel="stylesheet" href="Resources/styles.css">
 </head>
 
@@ -18,26 +17,26 @@
   </div>
 </header>
 <main id="main" class="container" role="main">
-<p><strong><a href="http://www.amazon.com/Optimal-Learning-Wiley-Probability-Statistics/dp/0470596694/ref=sr_1_3?ie=UTF8&amp;qid=1328538977&amp;sr=8-3"><img src="images/frontcover.jpg" width="259" height="323" class="float-right" alt="Optimal Learning book cover"></a>Optimal learning addresses the challenge of how to collect 
+<p><a href="http://www.amazon.com/Optimal-Learning-Wiley-Probability-Statistics/dp/0470596694/ref=sr_1_3?ie=UTF8&amp;qid=1328538977&amp;sr=8-3"><img src="images/frontcover.jpg" width="259" height="323" class="float-right" alt="Optimal Learning book cover"></a>Optimal learning addresses the challenge of how to collect 
   information as efficiently as possible, primarily for settings where collecting 
-information is time consuming and expensive. Some sample applications include:</strong></p>
+information is time consuming and expensive. Some sample applications include:</p>
 <ul>
-  <li><strong>How do you discover the best drug to treat a disease, out of the 
-  thousands of potential combinations?</strong></li>
-  <li><strong>What is the best price to charge for a product on the internet?</strong></li>
-  <li><strong>What the best set of parameters (diameter of a tube, size of a 
+  <li>How do you discover the best drug to treat a disease, out of the 
+  thousands of potential combinations?</li>
+  <li>What is the best price to charge for a product on the internet?</li>
+  <li>What the best set of parameters (diameter of a tube, size of a 
     plate, length of a component, pressure, temperature, concentration) to make 
-    a particular device or chemical process work the best?</strong></li>
-  <li><strong>What is the highest concentration of a disease in the population?</strong></li>
-  <li><strong>What are the best labor rules or terms in a customer contract 
-    to maximize profits in a time-consuming business simulator?</strong></li>
-  <li><strong>Where should we collect information about the links of a graph so we get can find the best path to respond to an emergency?</strong></li>
+    a particular device or chemical process work the best?</li>
+  <li>What is the highest concentration of a disease in the population?</li>
+  <li>What are the best labor rules or terms in a customer contract 
+    to maximize profits in a time-consuming business simulator?</li>
+  <li>Where should we collect information about the links of a graph so we get can find the best path to respond to an emergency?</li>
 </ul>
-<p><strong>Each of these problems require making observations (measurements) to 
+<p>Each of these problems require making observations (measurements) to 
   determine which choice works the best. The challenge is that measurements take 
-  time and/or cost money, which means we have to collect this information carefully.</strong></p>
-<p><strong>Optimal Learning is a rich field that includes contributions from different communities. At the moment, this website focuses on our work on the knowledge gradient, a simple, elegant concept for collecting information. As the website evolves, we will provide a more complete representation of the different frameworks and methods that have evolved for solving this important problem class.</strong></p>
-<p><strong>Clicking on the book cover takes you to Amazon. Course instructors may order an examination copy directly from Wiley. <a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470596694.html" target="_blank" rel="noopener">Click here.</a> A review of the book by Steve Chick appeared in the November 2012 issue of Informs Journal on Computing. <a href="Papers/Chick-ReviewOptimalLearningNov2012.pdf" target="_blank" rel="noopener">Click here.</a></strong> <strong>A short article on optimal learning that appeared in OR/MS Today is available <a href="Papers/Powell-Optimal%20Learning-ORMS%20TodayMay2012.pdf" target="_blank" rel="noopener">here</a>.</strong></p>
+  time and/or cost money, which means we have to collect this information carefully.</p>
+<p>Optimal Learning is a rich field that includes contributions from different communities. At the moment, this website focuses on our work on the knowledge gradient, a simple, elegant concept for collecting information. As the website evolves, we will provide a more complete representation of the different frameworks and methods that have evolved for solving this important problem class.</p>
+<p>Use the book cover to visit Amazon for the book. Course instructors may order an examination copy directly from Wiley via the <a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470596694.html" target="_blank" rel="noopener">Wiley product page</a>. A review by Steve Chick appeared in the November 2012 issue of Informs Journal on Computing (<a href="Papers/Chick-ReviewOptimalLearningNov2012.pdf" target="_blank" rel="noopener">download the review</a>). A short article from OR/MS Today is also available (<a href="Papers/Powell-Optimal%20Learning-ORMS%20TodayMay2012.pdf" target="_blank" rel="noopener">read the OR/MS Today article</a>).</p>
 <nav class="site-nav" aria-label="Section navigation">
   <ul>
     <li><a href="#KG">The knowledge gradient</a></li>
@@ -52,9 +51,8 @@ information is time consuming and expensive. Some sample applications include:</
   <p class="visually-hidden" aria-live="polite">Use the links above to jump to sections</p>
 </nav>
 <p></p>
-<p><strong><font size="+1"><a name="KG" id="KG"></a>The knowledge 
-gradient</font></strong></p>
-<p><strong>Below we provide an overview of our current research in the knowledge gradient, organized as follows:</strong></p>
+<h2 id="KG">The knowledge gradient</h2>
+<p>Below we provide an overview of our current research in the knowledge gradient, organized as follows:</p>
 <ul>
   <li><a href="#KG_intro"><strong> A brief introduction</strong></a></li>
   <li><a href="#beliefmodels"><strong>The knowledge gradient for different belief 
@@ -66,14 +64,14 @@ gradient</font></strong></p>
   <li><strong><a href="#robust">Learning with a robust objective function</a></strong></li>
 </ul>
 <p>&nbsp;</p>
-<p><strong><font size="+1"><a name="KG_intro"></a>A brief introduction</font></strong></p>
+<h3 id="KG_intro">A brief introduction</h3>
 <p><strong>Our research has focused on the idea of the <em>knowledge gradient</em>, 
   which measures the marginal value of a measurement in terms of the value of 
   the information gained by the measurement. The measurement may require field 
   experimentation or running a time consuming simulation (some business simulators 
   take days to run). We model the economic decision we are trying to make, and 
   then identify the information that has the highest impact on the economic problem.</strong></p>
-<p><strong><img src="images/KGmeasuring5.jpg" width="337" height="191" class="float-right" alt="Illustration of measuring alternatives for knowledge gradient">The 
+<p><img src="images/KGmeasuring5.jpg" width="337" height="191" class="float-right" alt="Illustration of measuring alternatives for knowledge gradient">The 
   knowledge gradient does not identify the best choice - it identifies the measurement 
   which will do the most to identify the best choice. If we have five alternatives 
   (as shown to the right) with different levels of uncertainty about each alternative, 
@@ -96,9 +94,8 @@ gradient</font></strong></p>
   For example, if we are trying to find the hot spot (in red) of the surface to 
   the left (below), we have to find the maximum of the knowledge gradient surface 
   shown on the right.</strong></p>
-<p align="left"><strong><img src="images/ContinuousSurfaceAndKG.jpg" width="727" height="254" alt="Continuous surface and corresponding knowledge gradient surface"></strong></p>
-<p align="left"><a name="beliefmodels"></a><strong><font size="+1">The knowledge 
-  gradient for different belief models</font></strong></p>
+<p align="left"><img src="images/ContinuousSurfaceAndKG.jpg" width="727" height="254" alt="Continuous surface and corresponding knowledge gradient surface"></p>
+<h3 id="beliefmodels">The knowledge gradient for different belief models</h3>
 <p align="left">To formulate an optimal learning problem, we have to first create 
   a <em>belief model</em>. It is useful to divide these models into three fundamental 
   classes: </p>
@@ -129,7 +126,7 @@ gradient</font></strong></p>
 <p align="left">Brief discussions 
   of each are given below.</p>
 <blockquote>
-  <p align="left"><strong>Lookup table belief models</strong></p>
+  <h4 align="left">Lookup table belief models</h4>
   <p align="left">Let an alternative <em>x </em>be a discrete number 1, ..., M where 
     M is not too large (say less than 1000). We may have a belief <em>mu_x</em> about each <em>x</em>. If we have independent beliefs, the knowledge gradient 
     is particularly easy to apply. An easy tutorial is contained in the article</p>
@@ -159,7 +156,7 @@ gradient</font></strong></p>
 </blockquote>
 <p align="left">&nbsp;</p>
 <blockquote>
-  <p align="left"><strong>Parametric belief models</strong></p>
+  <h4 align="left">Parametric belief models</h4>
   <p align="left">There are many problems where there may be a huge number of alternatives. 
     For example, imagine we are trying to determine the best ad to put on a website. 
     We would like to predict how many ad clicks an ad will receive based on attributes 
@@ -182,7 +179,7 @@ gradient</font></strong></p>
 </blockquote>
 <p align="left">&nbsp;</p>
 <blockquote>
-  <p align="left"><strong>Nonparametric belief models</strong></p>
+  <h4 align="left">Nonparametric belief models</h4>
   <p align="left">We have extended the knowledge gradient to two classes of nonparametric 
     belief models. Our first effort used an approximation method based on estimating 
     a function at different levels of aggregation. If we want an estimate of the 
@@ -210,7 +207,7 @@ gradient</font></strong></p>
   </blockquote>
 </blockquote>
 <p align="left">&nbsp;</p>
-<h3 align="left"><strong><a name="onlineoffline"></a>The knowledge gradient for online and offline learning</strong></h3>
+<h3 align="left" id="onlineoffline">The knowledge gradient for online and offline learning</h3>
 <p align="left">Offline learning arises when we have a budget for finding the best possible solution, after which have to use the solution in a production setting. Online learning arises when we are in a production setting, and we have to live with the costs or rewards, but we want to learn as we go. In this setting, we have to make a tradeoff between the costs or rewards we receive, and the value of information that we acquire that we can use for future decisions.</p>
 <p align="left">It turns out that there is a very simple, elegant relationship between the knowledge gradient for offline learning, and the knowledge gradient for online learning. Imagine that we have a finite-horizon online learning problem where we have a total of <em>N</em> measurements, and we have already learned <em>n</em>. If <em>v</em>^{off}_x is the offline knowledge gradient for alternative <em>x</em>, then the online knowledge gradient is given by</p>
 <blockquote>
@@ -230,7 +227,7 @@ gradient</font></strong></p>
     using Gaussian Process Regression,&#8221; SIAM J. on Optimization (to appear)</a></p>
 </blockquote>
 <p align="left">&nbsp;</p>
-<h3 align="left"><strong><a name="graphs"></a>Learning on graphs and linear programs</strong></h3>
+<h3 align="left" id="graphs">Learning on graphs and linear programs</h3>
 <p align="left"><img src="images/graph.jpg" alt="Graph visualization" width="414" height="188" class="float-right">Imagine that you want to find the shortest path between two points, but you do not know the times on the links. You have a way of collecting information, but it is expensive, and you have a limited amount of time to learn the best path. Which links should you learn about to have the greatest impact on your ability to find the shortest path?</p>
 <p align="left">The knowledge gradient can be computed for each link in the network using at most two shortest path calculations (and often one). </p>
 <p align="left">For more information, see</p>
@@ -239,21 +236,21 @@ gradient</font></strong></p>
 <p><a href="Papers/Ryzhov%20Powell%20-%20Information%20collection%20for%20Linear%20Programs_SIAM_October2012.pdf" target="_blank">Ryzhov, I., W. B. Powell, &ldquo;Information Collection for Linear  Programs with Uncertain Objective Coefficients,&rdquo; SIAM J. Optimization, Vol.  22(4), pp. 1344&ndash;1368 http://epubs.siam.org/doi/abs/10.1137/12086279X.  (2012).</a></p>
 <p align="left"><a href="Papers/Ryzhov%20Powell%20KG%20for%20linear%20programs%20June142012.pdf" target="_blank"></a></p>
 <p align="left">&nbsp;</p>
-<h3 align="left"><a name="physicalstate"></a>Learning in the presence of a physical state</h3>
+<h3 align="left" id="physicalstate">Learning in the presence of a physical state</h3>
 <p><a href="Papers/RyzhovPowell-kgdp_AllertonconferenceJune142010.pdf" target="_blank">Ryzhov, I. O.,  W. B. Powell, &ldquo;Approximate Dynamic Programming with Correlated Bayesian Beliefs,&rdquo;  Forty-Eighth Annual Allerton Conference on Communication, Control, and  Computing, September 29 &ndash; October 1, 2010, Allerton Retreat Center, Monticello,  Illinois., IEEE Press, pp. 1360-1367. </a>This paper introduces the idea of using the knowledge gradient within a dyamic program, which effectively means in the presence of a physical state. This paper uses a discrete, lookup table representation of the belief model.</p>
 <p><a href="Papers/Ryzhov%20Powell-Bayesian%20active%20learning%20with%20basis%20functionsJan2011.pdf" target="_blank">Ryzhov, I. O. and W. B. Powell, &ldquo;Bayesian Active Learning With  Basis Functions,&rdquo; SSCI 2011 ADPRL - 2011 IEEE Symposium on Adaptive Dynamic  Programming and Reinforcement Learning, Paris, April, 2011.</a> - This paper uses the knowledge gradient for dynamic programs where the value function is now approximated using a linear model.</p>
 <p align="left">&nbsp;</p>
-<h3 align="left"><a name="robust"></a>Learning with a robust objective</h3>
+<h3 align="left" id="robust">Learning with a robust objective</h3>
 <p align="left">A fresh perspective of learning is to introduce a mini-max objective. Instead of maximizing the expected value of a measurement, we can adapt the knowledge gradient to maximize the worst outcome. An initial investigation of this idea is</p>
 <p><a href="Papers/Ryzhov%20Defourny%20Powell-Ranking%20and%20selection%20meets%20robust%20optimization_final.pdf" target="_blank">Ilya Ryzhov, Boris Defourny, Warren Powell, &ldquo;Ranking and  Selection Meets Robust Optimization,&rdquo; Winter Simulation Conference, 2012.</a></p>
 <p align="left">&nbsp;</p>
-<p align="left"><a name="software"></a><strong><font size="+1">Downloadable software</font></strong></p>
-<p align="left"><strong>We offer the following modules for download:</strong></p>
+<h2 align="left" id="software">Downloadable software</h2>
+<p align="left">We offer the following modules for download:</p>
 <ul>
-  <li><strong>The knowledge gradient for independent, normal beliefs - This is the simplest case. <a href="software/KnowledgeGradient_IndependentNormal.xlsx" target="_blank" rel="noopener">Click here for a spreadsheet implementation of the knowledge gradient for independent, normally distributed beliefs</a>. </strong></li>
-  <li><strong><a href="software/OptimalLearningCalculator.zip">The Optimal Learning Calculator</a> - A spreadsheet-based package that provides an introduction to learning and a variety of policies for learning. For more information, <a href="#OL_calculator">click here</a>.</strong> <strong>We are developing an online tutorial, but at the moment you are on your own. Stay tuned.</strong> (Argh! Just learned that a change in the Java library means the code no longer runs on some machines due to a problem with how paths are handled - hope to have an update this summer).</li>
-  <li><strong>Matlab implementation of the knowledge gradient for correlated beliefs using a lookup table belief model</strong> - <strong><a href="software/KGCB.zip">(Click here for algorithm and example)</a></strong> Updated March 11, 2013.</li>
-  <li><strong>Matlab implementation of the knowledge gradient for correlated beliefs using a belief model using linear regression</strong> <strong><a href="software/KGLinRegression.zip">(Click here for software)</a></strong> - Updated May 9, 2012.</li>
+  <li>The knowledge gradient for independent, normal beliefs — This is the simplest case. <a href="software/KnowledgeGradient_IndependentNormal.xlsx" target="_blank" rel="noopener">Spreadsheet implementation (independent normal beliefs)</a>.</li>
+  <li><a href="software/OptimalLearningCalculator.zip">Optimal Learning Calculator</a> — A spreadsheet-based package that provides an introduction to learning and a variety of policies for learning. For more information, see <a href="#OL_calculator">the calculator section</a>. We are developing an online tutorial, but at the moment you are on your own. Stay tuned. (Note: a Java library change may cause path issues on some machines; an update is planned.)</li>
+  <li>Matlab implementation of the knowledge gradient for correlated beliefs using a lookup table belief model — <a href="software/KGCB.zip">Algorithm and example (ZIP)</a>. Updated March 11, 2013.</li>
+  <li>Matlab implementation of the knowledge gradient for correlated beliefs using a linear regression belief model — <a href="software/KGLinRegression.zip">KGLinRegression (ZIP)</a>. Updated May 9, 2012.</li>
 </ul>
 <p><strong>In 2015, we introduced MOLTE, Modular Optimal Learning Testing Environment, which is a Matlab-based environment for testing a wide range of learning algorithms for problems with discrete alternatives, on a wide range of problems. </strong></p>
 <ul>
@@ -262,32 +259,31 @@ gradient</font></strong></p>
   <li><strong>The user can specify tunable parameters, or ask the package to optimize tunable parameters.</strong></li>
   <li><strong>Any problem can be tested using an offline (&quot;ranking and selection&quot;) or online (&quot;multiarmed bandit&quot;) objective function. </strong></li>
 </ul>
-<p align="left"><strong><a href="http://castlelab.princeton.edu/software.htm" target="_blank">Click here to go to the website where the code is available.</a></strong></p>
-<p align="left"><strong><a href="Papers/Wang%20-%20Finite%20time%20analysis%20for%20the%20knowledge%20gradient%20policy.pdf" target="_blank">Click here for research paper describing the MOLTE environment and initial tests.</a></strong></p>
+<p align="left"><a href="http://castlelab.princeton.edu/software.htm" target="_blank" rel="noopener">Castle Lab software page</a> (external downloads).</p>
+<p align="left"><a href="Papers/Wang%20-%20Finite%20time%20analysis%20for%20the%20knowledge%20gradient%20policy.pdf" target="_blank" rel="noopener">Finite-time analysis for the knowledge gradient policy (paper)</a> — includes the MOLTE environment and initial tests.</p>
 <p align="left"></p>
 <h3 align="left"><a name="applications"></a>Applications</h3>
 <p align="left">This sections highlights some applications we have encountered, partly from research, partly from teaching, and partly from our own need for optimal learning algorithms in the context of comparing and tuning algorithms.</p>
 <blockquote>
   <h3 align="left">&nbsp;</h3>
-  <h3 align="left"><strong><font size="+1">Drug discovery</font></strong></h3>
+  <h3 align="left">Drug discovery</h3>
 </blockquote>
-<font size="+1"><strong></strong></font>
+
 <blockquote>
-  <p align="left">The knowledge gradient, using a parametric belief model, was used to sequence experiments while searching for the best compound to cure a form of Ewing's sarcoma. For more on this project, <a href="http://www.castlelab.princeton.edu/DrugDiscovery.htm">click here</a>. </p>
+  <p align="left">The knowledge gradient, using a parametric belief model, was used to sequence experiments while searching for the best compound to cure a form of Ewing's sarcoma. For more on this project, see the <a href="http://www.castlelab.princeton.edu/DrugDiscovery.htm" target="_blank" rel="noopener">Castle Lab Drug Discovery page</a>. </p>
   <h3 align="left">&nbsp;</h3>
-  <h3 align="left"><strong>May the best man win</strong></h3>
+  <h3 align="left">May the best man win</h3>
   <p align="left">Finding the best team to compete in an invent. </p>
   <p><a href="Papers/Ryzhov-May%20the%20best%20man%20win.pdf" target="_blank">Ryzhov, I. O., Awais Tariq, W. B. Powell, &ldquo;May the Best Man  Win: Simulation Optimization for Match-Making in E-Sports,&rdquo; Proceedings of the  Winter Simulation Conference, Phoenix, Arizona, December 11-14.</a></p>
   <p>&nbsp;</p>
-  <h3 align="left"><strong>Finding the best energy saving technology</strong></h3>
+  <h3 align="left">Finding the best energy saving technology</h3>
   <p><a href="Papers/RyzhovPowell-MCKGforemissionsreduction.pdf" target="_blank">Ryzhov, I., W. B. Powell, &ldquo;A Monte-Carlo Knowledge Gradient  Method for Learning Abatement Potential of Emissions Reduction Technologies,&rdquo;  Winter Simulation Conference, 2009. M.  D. Rossetti, R. R. Hill, B. Johansson, A. Dunkin, and R. G. Ingalls, eds, 2009,  pp. 1492-1502.</a></p>
   <p>&nbsp;</p>
   <p><strong>Materials science</strong></p>
   <p><a href="Papers/Chen_KGDP_JUQ_020615.pdf" target="_blank">Si Chen, K-R G. Reyes, M. Gupta, M. C. McAlpine,  W. B. Powell, &ldquo;Optimal Learning in Experimental Design Using the Knowledge  Gradient Policy with Application to Characterizing Nanoemulsion Stability,&rdquo; SIAM  J. Uncertainty Quantification (to appear)</a></p>
 </blockquote>
 <p align="left">&nbsp;</p>
-<p align="left"><font size="+1"><strong>Student projects 
-  from ORF 418 - Optimal Learning</strong></font></p>
+<h3 align="left">Student projects from ORF 418 — Optimal Learning</h3>
 <p>The student projects performed in the course taught at Princeton (ORF 418-Optimal Learning) produced a wide range of interesting topics. Below is a partial list:</p>
 <p>Learning Optimal Levels for the Reservoir in Yunnan, China</p>
 <p>Ethiopian Famines&#8212; Learning Solutions for Sustainable Agriculture</p>
@@ -318,10 +314,9 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
 <p><a href="Course/ORF%20418%202012%20course%20project.docx">Course project</a> - Students are encouraged to work in teams of two. The project requires that they pick a problem where the collection of information is time-consuming or expensive. The project has three requirements: initial problem description, a summary of the math model and learning policies, and then the final report. You need to use care to make sure they pick good problems. I use the last three lectures (depending on the size of the class) to allow students to present their projects (without numerical results), so that the rest of the class sees the diversity of problems.</p>
 <p><br>
 </p>
-<p><font color="#000000" size="+1"><strong><a name="KG_readings"></a>Additional 
-  readings</strong></font></p>
+<h2 id="KG_readings">Additional readings</h2>
 <p>Below is a summary of research papers that we have produced while pursuing this work.</p>
-<p><strong>Tutorials</strong></p>
+<h3>Tutorials</h3>
 <blockquote> 
   <p><strong>Powell, W.B.&quot;Optimal Learning: Optimization in the Information Age,&quot; article in OR/MS Today (2012)</strong></p>
   <blockquote>
@@ -355,7 +350,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   </blockquote>
 </ul>
 <p>&nbsp;</p>
-<p><strong>The knowledge gradient with independent beliefs</strong></p>
+<h3>The knowledge gradient with independent beliefs</h3>
 <blockquote> 
   <p><strong>Frazier, P., W. B. Powell and S. Dayanik, &#8220;A Knowledge Gradient 
     Policy for Sequential Information Collection,&#8221; SIAM J. on Control and 
@@ -383,7 +378,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   </blockquote>
 </ul>
 <p>&nbsp;</p>
-<p><strong>The knowledge gradient with correlated beliefs (offline learning, discrete alternatives)</strong></p>
+<h3>The knowledge gradient with correlated beliefs (offline learning, discrete alternatives)</h3>
 <blockquote>
   <p><strong>P. Frazier, W. B. Powell, S. Dayanik, &#8220;The Knowledge-Gradient 
     Policy for Correlated Normal Beliefs,&#8221; Informs Journal on Computing, 
@@ -412,7 +407,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   </blockquote>
 </ul>
 <p>&nbsp;</p>
-<p><strong>The S-curve effect - Handling the nonconcavity of information</strong></p>
+<h3>The S-curve effect — Handling the nonconcavity of information</h3>
 <blockquote>
   <p><strong>Frazier, P. I., and W. B. Powell, &#8220;Paradoxes in Learning: The 
     Marginal Value of Information and the Problem of Too Many Choices,&#8221; 
@@ -434,7 +429,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   </blockquote>
   <p>&nbsp;</p>
 </blockquote>
-<p><strong>From offline learning to online learning:</strong></p>
+<h3>From offline learning to online learning</h3>
 <blockquote>
   <p><strong>I. Ryzhov, W. B. Powell, P. I. Frazier, &ldquo;The knowledge gradient algorithm for a  general class of online learning problems,&rdquo; <em>Operations  Research</em>, Vol. 60, No. 1, pp. 180-195 (2012).&nbsp; </strong></p>
   <blockquote>
@@ -460,7 +455,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   <blockquote>&nbsp;
   </blockquote>
 </blockquote>
-<p><strong>The knowledge gradient using a linear belief model</strong></p>
+<h3>The knowledge gradient using a linear belief model</h3>
 <blockquote>
   <p><strong>D. Negoescu, P. Frazier and W. B. Powell, &#8220;The Knowledge Gradient 
     Algorithm for Sequencing Experiments in Drug Discovery&#8221;, Informs Journal 
@@ -494,7 +489,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   </blockquote>
 </blockquote>
 <p>&nbsp;</p>
-<p><strong>The knowledge gradient using a nonlinear belief model</strong></p>
+<h3>The knowledge gradient using a nonlinear belief model</h3>
 <blockquote>
   <p><strong>Si Chen, K-R G. Reyes, M. Gupta, M. C. McAlpine,  W. B. Powell, &ldquo;Optimal Learning in Experimental Design Using the Knowledge  Gradient Policy with Application to Characterizing Nanoemulsion Stability,&rdquo; SIAM  J. Uncertainty Quantification (to appear)</strong></p>
   <blockquote>
@@ -504,7 +499,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   <p>&nbsp;</p>
 </blockquote>
 <p>&nbsp;</p>
-<p><strong>The knowledge gradient for nonparametric belief models:</strong></p>
+<h3>The knowledge gradient for nonparametric belief models</h3>
 <blockquote>
   <p><strong>Mes, M., P. I. Frazier and W. B. Powell, &#8220;Hierarchical Knowledge Gradient 
   for Sequential Sampling,&#8221; J. Machine Learning Research, Vol. 12, pp. 2931-2974</strong></p>
@@ -523,7 +518,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
     <p><em><a href="Papers/Cheng%20Jamshidi%20Powell%20-%20Optimal%20learning%20with%20local%20parametric%20belief%20model%20March142015.pdf" target="_blank">(Click here to download paper)</a></em></p>
   </blockquote>
 </blockquote>
-<p><strong>Learning while learning</strong></p>
+<h3>Learning while learning</h3>
 <p>There are applications where the underlying alternative is steadily getting better in the process of observing it. An athlete improves over time, as do teams that work together over time. A product with a specific set of features might see sales steadily improve as word of mouth gets around. Often, we do not have time to wait for a process to reach its asymptotic limit, so we can fit a function that tries to guess (imperfectly) this limit. This problem arose in a business simulator which used approximate dynamic programming to learn a policy, while we were tuning various business parameters. This work is summarized in </p>
 <blockquote>
   <p><strong>P. Frazier, W. B. Powell, H. P. Simao, &quot;Simulation Model Calibration 
@@ -544,7 +539,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
       to download paper)</a></em></p>
   </blockquote>
 </blockquote>
-<p><strong>Learning when the alternatives are continuous</strong></p>
+<h3>Learning when the alternatives are continuous</h3>
 <p>This paper can handle low-dimensional vectors of continuous parameters.</p>
 <blockquote>
   <p><strong>Scott, Warren, P. I. Frazier,  and W. B. Powell. &quot;The Correlated Knowledge Gradient for Simulation  Optimization of Continuous Parameters Using Gaussian Process Regression.&quot;&nbsp;<em>SIAM Journal on Optimization</em>&nbsp;21, No. 3 (2011): 996-1026.</strong></p>
@@ -557,7 +552,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   </blockquote>
 </blockquote>
 <!-- Removed legacy GA loader for performance and privacy -->
-<p><strong>Learning on graphs and linear programs </strong></p>
+<h3>Learning on graphs and linear programs</h3>
 <blockquote>
   <p><strong>I.O. Ryzhov, W.B. Powell, &quot;Information collection on a graph,&quot; 
     <em>Operations Research</em>, Vol 59, No. 1, pp. 188-201, 2011. (c) Informs</strong></p>
@@ -583,7 +578,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   <p><em><a href="Papers/Defourny%20Ryzhov%20Powell%20-%20Optimal%20information%20blending_October122012.pdf" target="_blank">(Click here to download paper)</a></em></p>
 </blockquote>
 <p>&nbsp;</p>
-<p><strong>Learning in the presence of a physical state</strong></p>
+<h3>Learning in the presence of a physical state</h3>
 <blockquote>
   <p><a href="Papers/RyzhovPowell-kgdp_AllertonconferenceJune142010.pdf" target="_blank">Ryzhov, I. O.,  W. B. Powell, &ldquo;Approximate Dynamic Programming with Correlated Bayesian Beliefs,&rdquo;  Forty-Eighth Annual Allerton Conference on Communication, Control, and  Computing, September 29 &ndash; October 1, 2010, Allerton Retreat Center, Monticello,  Illinois., IEEE Press, pp. 1360-1367. </a></p>
   <blockquote>
@@ -594,7 +589,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
     <p><em>This paper uses the knowledge gradient for dynamic programs where the value function is now approximated using a linear model.</em></p>
   </blockquote>
 </blockquote>
-<p><strong>Nested batch learning</strong></p>
+<h3>Nested batch learning</h3>
 <blockquote>
   <p><strong>Yingfei Wang, K. G. Reyes, K. A. Brown, C. A.  Mirkin, W. B. Powell, &ldquo;Nested Batch Mode Learning and Stochastic Optimization  with an Application to Sequential Multi-Stage Testing in Materials Science,&rdquo; SIAM  J. Scientific Computing (to appear)</strong></p>
   <blockquote>
@@ -603,7 +598,7 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</p>
   </blockquote>
 </blockquote>
 <p>&nbsp;</p>
-<p><strong>General theory</strong></p>
+<h3>General theory</h3>
 <ul>
   <div align="center">
     <p align="left"><strong>P. Frazier and W. B. Powell, &ldquo;Consistency of Sequential  Bayesian Sampling Policies&rdquo; SIAM J. Control and Optimization, Vol. 49, No. 2,  712-731 (2011).&nbsp; DOI: 10.1137/090775026</strong></p>
