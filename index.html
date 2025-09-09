@@ -28,7 +28,7 @@
     </button>
     <ul id="main-nav">
       <li><a href="#KG">The Knowledge Gradient</a></li>
-      <li><a href="tutorialsciences.htm">Tutorial</a></li>
+      <li><a href="#tutorialsciences">Tutorial</a></li>
       <li><a href="#software">Software</a></li>
       <li><a href="#applications">Applications</a></li>
       <li><a href="Papers/TableofContentsOptimalLearningWileyNov2011.pdf">Table of Contents</a></li>
@@ -54,6 +54,35 @@
 <p>Each of these problems require making observations (measurements) to determine which choice works the best. The challenge is that measurements take time and/or cost money, which means we have to collect this information carefully.</p>
 <p>Optimal Learning is a rich field that includes contributions from different communities. At the moment, this website focuses on our work on the knowledge gradient, a simple, elegant concept for collecting information. As the website evolves, we will provide a more complete representation of the different frameworks and methods that have evolved for solving this important problem class.</p>
 <p>Use the book cover to visit Amazon for the book. Course instructors may order an examination copy directly from Wiley via the <a href="https://www.wiley.com/en-us/Optimal+Learning-p-9781118309841">Wiley product page</a>. <a href="Papers/Chick-ReviewOptimalLearningNov2012.pdf">A review by Steve Chick</a> appeared in the November 2012 issue of Informs Journal on Computing. A <a href="Papers/Powell-Optimal%20Learning-ORMS%20TodayMay2012.pdf">short article from OR/MS Today</a> is also available.</p>
+
+<h2 id="tutorialsciences">Tutorial: Optimal Learning in the laboratory sciences</h2>
+<p align="center">New (and still in beta - comments are appreciated)</p>
+<p align="left">&nbsp;This webpage provides a series of tutorials (in powerpoint) covering the general principles of optimal learning in the context of problems that arise in laboratory sciences. This tutorial arose out of a project funded by the Air Force Office of Scientific Research.</p>
+<p align="left">The tutorial has been broken into a series of short presentations. Please use the brief descriptions below to prioritize the components that are likely to be most interesting to you.</p>
+<p align="left">These tutorials are quite new - please feel free to add notes to the notes section of each slide if there are questions or comments, and send your annotated slides to Warren Powell &lt;powell@princeton.edu&gt;.</p>
+<p><a href="TutorialLaboratorySciences/Overview.pptx">Overview</a> - Why is optimal learning important in the laboratory sciences. This also highlights the fundamental elements of a learning problem.</p>
+<p><a href="TutorialLaboratorySciences/Case-CarbonNanotubes.pptx">Case application &ndash; Carbon nanotubes</a> - This is a sample application at AFRL where a robotic &quot;scientist&quot; has to quickly run experiments (guided by an algorithm) to learn the best of a set of tunable parameters. We use this application to help to motivate the elements of a learning problem.</p>
+<p>
+  <a href="TutorialLaboratorySciences/RicherBeliefModels.pptx">A richer belief model</a> - We started by using a simple lookup table with independent beliefs. In this tutorial, we introduce the concept of correlated beliefs, and the use of a linear belief model.
+  </p>
+<p><a href="TutorialLaboratorySciences/ObjectiveFunction.pptx">Understanding the objective function</a> - If we want to make good decisions, we need some way to evaluate how well we are doing. This means designing a set of metrics that we can use to evaluate our performance.
+  </p>
+<p><a href="TutorialLaboratorySciences/ValueofInformation.pptx">The value of information</a> - A central idea in optimal learning involves understanding the value of information. It is always the case that more information is better, but in some settings, the marginal value of information decreases with the number of experiments, while in others, the marginal value of information may actually increase before decreasing.
+  </p>
+<p><a href="TutorialLaboratorySciences/KnowledgeGradient.pptx">The knowledge gradient</a> - This is a method that calculates the expected value of information from an experiment, which we have found to be a useful input to the decision of what experiment to run next.
+</p>
+<p><a href="TutorialLaboratorySciences/DecisionSet.pptx">Forming a decision set</a> - Scientists sometimes make choices without fully articulating the range of possible decisions. Here, we talk about the importance of first identifying the full set of choices, even when it is much more than you could ever test in the lab.
+  </p>
+<p><a href="TutorialLaboratorySciences/BuildingBeliefModel.pptx">Building a belief model</a> - At the heart of optimal learning is capturing the expertise of a scientist in a mathematical construct known as a belief model. These can come in different forms, depending on the setting. Here we illustrate a variety of belief models that we have encountered in our work up to now.
+  </p>
+<p><a href="TutorialLaboratorySciences/TwoDimensionalSurface.pptx">Searching a two-dimensional surface</a> - If we are just searching over one or two dimensions, relatively simple belief models can provide surprisingly good results with a small number of experiments without putting a lot of time into building a more structured belief model.
+  </p>
+<p><a href="TutorialLaboratorySciences/NonlinearBeliefModels.pptx">Nonlinear belief models</a> - If we are searching over more than two parameters, then it helps if we can build an analytical model that captures, at least approximately, relationships between control parameters and the behavior of the system. Typically these models depend on several unknown parameters, and these models tend to be nonlinear in these unknown parameters, which creates computational challenges when calculating the value of information. Here we describe a method that gets around this problem.
+  </p>
+<p><a href="TutorialLaboratorySciences/Interactivity.pptx">Interacting with the scientist</a> - Choosing the next experiment to run requires striking a balance between maximizing the likelihood of success (everyone wants to hit the home run), collecting information, minimizing the complexity of an experiment, and running them as quickly as possible at least cost. Some of these can be quantified in our models, but the rest are known only to the scientist. For this reason, we favor an approach where the scientist is shown the likelihood of success and the value of information. Then the scientist has to make a subjective judgment about which experiment to run.
+  </p>
+<p><a href="TutorialLaboratorySciences/EvaluatingRisk.pptx">Evaluating risk</a> - A challenge faced by research managers is assessing the likelihood that an experimental program might be successful given the noise inherent in experiments and the nature of the underlying problem. We show that we can use the knowledge gradient as a black-box policy to run hundreds of simulations, capturing both the noise of experiments and the range of possible beliefs. </p>
+<p><a href="TutorialLaboratorySciences/ClosingNotes.pptx">Closing notes</a></p>
 
 <h2 id="KG">The knowledge gradient</h2>
 
@@ -415,6 +444,9 @@ Gradient Algorithm with Linear Beliefs for the Street Cart Vendor Problem</li>
 <p><em><a href="Papers/Wang%20-%20Finite%20time%20analysis%20for%20the%20knowledge%20gradient%20policy.pdf">Finite‑time Analysis for the Knowledge‑Gradient Policy (Wang, Powell, Reyes, Schapire)</a></em></p>
 </main>
 <footer class="site-footer container" role="contentinfo">
+<a href="#" class="back-to-top" title="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>
+</a>
 <!-- <div class="subfooter">
   <div class="container">
     <div class="row">

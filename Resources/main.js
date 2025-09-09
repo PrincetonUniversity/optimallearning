@@ -8,3 +8,17 @@ if (menuToggle && mainNav) {
     menuToggle.setAttribute('aria-expanded', isExpanded);
   });
 }
+
+const backToTopButton = document.querySelector('.back-to-top');
+const siteNav = document.querySelector('.site-nav');
+
+if (backToTopButton && siteNav) {
+  window.addEventListener('scroll', () => {
+    const siteNavRect = siteNav.getBoundingClientRect();
+    if (siteNavRect.bottom < 0) {
+      backToTopButton.classList.add('show-btt');
+    } else {
+      backToTopButton.classList.remove('show-btt');
+    }
+  });
+}
